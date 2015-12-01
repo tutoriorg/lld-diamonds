@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\OrderLld;
-use backend\models\OrderLldSearch;
+use backend\models\Sale;
+use backend\models\SaleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * OrderLldController implements the CRUD actions for OrderLld model.
+ * SaleController implements the CRUD actions for Sale model.
  */
-class OrderLldController extends Controller
+class SaleController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Lists all OrderLld models.
+     * Lists all Sale models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new OrderLldSearch();
+        $searchModel = new SaleSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Displays a single OrderLld model.
+     * Displays a single Sale model.
      * @param integer $id
      * @return mixed
      */
@@ -54,13 +54,13 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Creates a new OrderLld model.
+     * Creates a new Sale model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new OrderLld();
+        $model = new Sale();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,7 +72,7 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Updates an existing OrderLld model.
+     * Updates an existing Sale model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -91,7 +91,7 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Deletes an existing OrderLld model.
+     * Deletes an existing Sale model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,15 +104,15 @@ class OrderLldController extends Controller
     }
 
     /**
-     * Finds the OrderLld model based on its primary key value.
+     * Finds the Sale model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return OrderLld the loaded model
+     * @return Sale the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = OrderLld::findOne($id)) !== null) {
+        if (($model = Sale::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

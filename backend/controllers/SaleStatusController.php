@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use backend\models\OrderStatus;
-use backend\models\OrderStatusSearch;
+use backend\models\SaleStatus;
+use backend\models\SaleStatusSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * OrderStatusController implements the CRUD actions for OrderStatus model.
+ * SaleStatusController implements the CRUD actions for SaleStatus model.
  */
-class OrderStatusController extends Controller
+class SaleStatusController extends Controller
 {
     public function behaviors()
     {
@@ -27,12 +27,12 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Lists all OrderStatus models.
+     * Lists all SaleStatus models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new OrderStatusSearch();
+        $searchModel = new SaleStatusSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -42,7 +42,7 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Displays a single OrderStatus model.
+     * Displays a single SaleStatus model.
      * @param integer $id
      * @return mixed
      */
@@ -54,13 +54,13 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Creates a new OrderStatus model.
+     * Creates a new SaleStatus model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new OrderStatus();
+        $model = new SaleStatus();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -72,7 +72,7 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Updates an existing OrderStatus model.
+     * Updates an existing SaleStatus model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -91,7 +91,7 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Deletes an existing OrderStatus model.
+     * Deletes an existing SaleStatus model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,15 +104,15 @@ class OrderStatusController extends Controller
     }
 
     /**
-     * Finds the OrderStatus model based on its primary key value.
+     * Finds the SaleStatus model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return OrderStatus the loaded model
+     * @return SaleStatus the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = OrderStatus::findOne($id)) !== null) {
+        if (($model = SaleStatus::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\OrderLld */
+/* @var $model backend\models\Sale */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="order-lld-form">
+<div class="sale-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\OrderLld;
+use backend\models\SaleStatus;
 
 /**
- * OrderLldSearch represents the model behind the search form about `backend\models\OrderLld`.
+ * SaleStatusSearch represents the model behind the search form about `backend\models\SaleStatus`.
  */
-class OrderLldSearch extends OrderLld
+class SaleStatusSearch extends SaleStatus
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class OrderLldSearch extends OrderLld
     public function rules()
     {
         return [
-            [['id', 'status_id', 'phone', 'qty', 'total_price'], 'integer'],
-            [['name', 'first_name', 'last_name', 'email', 'company'], 'safe'],
+            [['id'], 'integer'],
+            [['code', 'lable'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class OrderLldSearch extends OrderLld
      */
     public function search($params)
     {
-        $query = OrderLld::find();
+        $query = SaleStatus::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -57,17 +57,10 @@ class OrderLldSearch extends OrderLld
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'status_id' => $this->status_id,
-            'phone' => $this->phone,
-            'qty' => $this->qty,
-            'total_price' => $this->total_price,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'first_name', $this->first_name])
-            ->andFilterWhere(['like', 'last_name', $this->last_name])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'company', $this->company]);
+        $query->andFilterWhere(['like', 'code', $this->code])
+            ->andFilterWhere(['like', 'lable', $this->lable]);
 
         return $dataProvider;
     }

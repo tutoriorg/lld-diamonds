@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\OrderStatusSearch */
+/* @var $searchModel backend\models\SaleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Order Statuses';
+$this->title = 'Sales';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="order-status-index">
+<div class="sale-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Order Status', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Sale', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -26,8 +26,15 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'code',
-            'lable',
+            'status_id',
+            'name',
+            'first_name',
+            'last_name',
+            // 'email:email',
+            // 'phone',
+            // 'company',
+            // 'qty',
+            // 'total_price',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

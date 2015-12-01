@@ -5,20 +5,20 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "order_status".
+ * This is the model class for table "sale_status".
  *
  * @property integer $id
  * @property string $code
  * @property string $lable
  */
-class OrderStatus extends \yii\db\ActiveRecord
+class SaleStatus extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'order_status';
+        return 'sale_status';
     }
 
     /**

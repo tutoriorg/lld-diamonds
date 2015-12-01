@@ -5,7 +5,7 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "order_lld".
+ * This is the model class for table "sale".
  *
  * @property integer $id
  * @property integer $status_id
@@ -18,14 +18,14 @@ use Yii;
  * @property integer $qty
  * @property integer $total_price
  */
-class OrderLld extends \yii\db\ActiveRecord
+class Sale extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'order_lld';
+        return 'sale';
     }
 
     /**
