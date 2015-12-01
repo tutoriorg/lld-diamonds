@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Product;
+use backend\models\ProductOrder;
 
 /**
- * ProductSearch represents the model behind the search form about `backend\models\Product`.
+ * ProductOrderSearch represents the model behind the search form about `backend\models\ProductOrder`.
  */
-class ProductSearch extends Product
+class ProductOrderSearch extends ProductOrder
 {
     /**
      * @inheritdoc
@@ -18,7 +18,7 @@ class ProductSearch extends Product
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['id', 'product_id', 'order_lld_id'], 'integer'],
             [['name', 'shape', 'color', 'clarity', 'lab', 'cert', 'sym', 'flour', 'cut', 'remark', 'culet', 'girdle'], 'safe'],
             [['langth', 'weight', 'height', 'depth', 'table_lld', 'polish', 'cost_parcent', 'cost', 'rap_parcent', 'sale_prise'], 'number'],
         ];
@@ -42,7 +42,7 @@ class ProductSearch extends Product
      */
     public function search($params)
     {
-        $query = Product::find();
+        $query = ProductOrder::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -58,6 +58,8 @@ class ProductSearch extends Product
 
         $query->andFilterWhere([
             'id' => $this->id,
+            'product_id' => $this->product_id,
+            'order_lld_id' => $this->order_lld_id,
             'langth' => $this->langth,
             'weight' => $this->weight,
             'height' => $this->height,

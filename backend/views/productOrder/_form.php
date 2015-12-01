@@ -4,13 +4,17 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\Product */
+/* @var $model backend\models\ProductOrder */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="product-form">
+<div class="product-order-form">
 
     <?php $form = ActiveForm::begin(); ?>
+
+    <?= $form->field($model, 'product_id')->textInput() ?>
+
+    <?= $form->field($model, 'order_lld_id')->textInput() ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 

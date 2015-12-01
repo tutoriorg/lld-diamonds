@@ -5,9 +5,11 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "product".
+ * This is the model class for table "product_order".
  *
  * @property integer $id
+ * @property integer $product_id
+ * @property integer $order_lld_id
  * @property string $name
  * @property string $shape
  * @property string $color
@@ -31,14 +33,14 @@ use Yii;
  * @property string $culet
  * @property string $girdle
  */
-class Product extends \yii\db\ActiveRecord
+class ProductOrder extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'product';
+        return 'product_order';
     }
 
     /**
@@ -47,7 +49,8 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'shape', 'color', 'clarity', 'lab', 'cert', 'langth', 'weight', 'height', 'depth', 'table_lld', 'polish', 'sym', 'flour', 'cut', 'cost_parcent', 'cost', 'rap_parcent', 'sale_prise', 'remark', 'culet', 'girdle'], 'required'],
+            [['product_id', 'order_lld_id', 'name', 'shape', 'color', 'clarity', 'lab', 'cert', 'langth', 'weight', 'height', 'depth', 'table_lld', 'polish', 'sym', 'flour', 'cut', 'cost_parcent', 'cost', 'rap_parcent', 'sale_prise', 'remark', 'culet', 'girdle'], 'required'],
+            [['product_id', 'order_lld_id'], 'integer'],
             [['langth', 'weight', 'height', 'depth', 'table_lld', 'polish', 'cost_parcent', 'cost', 'rap_parcent', 'sale_prise'], 'number'],
             [['name', 'shape', 'color', 'clarity', 'lab', 'sym', 'flour', 'cut', 'remark', 'culet', 'girdle'], 'string', 'max' => 100],
             [['cert'], 'string', 'max' => 255]
@@ -61,6 +64,8 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'product_id' => 'Product ID',
+            'order_lld_id' => 'Order Lld ID',
             'name' => 'Name',
             'shape' => 'Shape',
             'color' => 'Color',
