@@ -18,8 +18,9 @@ class ProductSearch extends Product
     public function rules()
     {
         return [
-            [['product_id'], 'integer'],
-            [['product_image', 'product_name', 'product_discription'], 'safe'],
+            [['id', 'rap_list', 'rap'], 'integer'],
+            [['ref', 'shape', 'color', 'clarity', 'cut', 'pol', 'symm', 'fluo', 'cert', 'details'], 'safe'],
+            [['weight', 'price_crt'], 'number'],
         ];
     }
 
@@ -56,12 +57,23 @@ class ProductSearch extends Product
         }
 
         $query->andFilterWhere([
-            'product_id' => $this->product_id,
+            'id' => $this->id,
+            'weight' => $this->weight,
+            'rap_list' => $this->rap_list,
+            'rap' => $this->rap,
+            'price_crt' => $this->price_crt,
         ]);
 
-        $query->andFilterWhere(['like', 'product_image', $this->product_image])
-            ->andFilterWhere(['like', 'product_name', $this->product_name])
-            ->andFilterWhere(['like', 'product_discription', $this->product_discription]);
+        $query->andFilterWhere(['like', 'ref', $this->ref])
+            ->andFilterWhere(['like', 'shape', $this->shape])
+            ->andFilterWhere(['like', 'color', $this->color])
+            ->andFilterWhere(['like', 'clarity', $this->clarity])
+            ->andFilterWhere(['like', 'cut', $this->cut])
+            ->andFilterWhere(['like', 'pol', $this->pol])
+            ->andFilterWhere(['like', 'symm', $this->symm])
+            ->andFilterWhere(['like', 'fluo', $this->fluo])
+            ->andFilterWhere(['like', 'cert', $this->cert])
+            ->andFilterWhere(['like', 'details', $this->details]);
 
         return $dataProvider;
     }

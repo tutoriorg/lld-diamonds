@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use dosamigos\fileinput\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\User */
@@ -31,22 +30,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'username',
-            'auth_key',
+            /*'auth_key',
             'password_hash',
-            'password_reset_token',
+            'password_reset_token',*/
             'email:email',
-            'status',
+           // 'status',
+            'first_name',
+            'last_name',
+            'phone',
+            'company',
             'created_at',
             'updated_at',
         ],
     ]) ?>
-    <?=FileInput::widget([
-        'model' => $model,
-        'attribute' => 'image', // image is the attribute
-        // using STYLE_IMAGE allows me to display an image. Cool to display previously
-        // uploaded images
-        'thumbnail' => $model->getAvatarImage(),
-        'style' => FileInput::STYLE_IMAGE
-    ]);?>
 
 </div>

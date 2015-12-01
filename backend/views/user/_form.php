@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use dosamigos\fileinput\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\User */
@@ -12,10 +11,6 @@ use dosamigos\fileinput\FileInput;
 <div class="user-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
-
-
-
 
     <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
@@ -28,6 +23,14 @@ use dosamigos\fileinput\FileInput;
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'status')->textInput() ?>
+
+    <?= $form->field($model, 'first_name')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'last_name')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'phone')->textInput() ?>
+
+    <?= $form->field($model, 'company')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'created_at')->textInput() ?>
 

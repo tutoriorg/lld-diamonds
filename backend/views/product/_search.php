@@ -15,13 +15,35 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'product_id') ?>
+    <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'product_image') ?>
+    <?= $form->field($model, 'ref') ?>
 
-    <?= $form->field($model, 'product_name') ?>
+    <?= $form->field($model, 'shape') ?>
 
-    <?= $form->field($model, 'product_discription') ?>
+    <?= $form->field($model, 'weight') ?>
+
+    <?= $form->field($model, 'color') ?>
+
+    <?php // echo $form->field($model, 'clarity') ?>
+
+    <?php // echo $form->field($model, 'cut') ?>
+
+    <?php // echo $form->field($model, 'pol') ?>
+
+    <?php // echo $form->field($model, 'symm') ?>
+
+    <?php // echo $form->field($model, 'fluo') ?>
+
+    <?php // echo $form->field($model, 'rap_list') ?>
+
+    <?php // echo $form->field($model, 'rap') ?>
+
+    <?php // echo $form->field($model, 'price_crt') ?>
+
+    <?php // echo $form->field($model, 'cert') ?>
+
+    <?php // echo $form->field($model, 'details') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

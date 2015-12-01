@@ -5,22 +5,32 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "Product".
+ * This is the model class for table "product".
  *
- * @property integer $product_id
- * @property string $product_image
- * @property string $product_name
- * @property string $product_discription
+ * @property integer $id
+ * @property string $ref
+ * @property string $shape
+ * @property double $weight
+ * @property string $color
+ * @property string $clarity
+ * @property string $cut
+ * @property string $pol
+ * @property string $symm
+ * @property string $fluo
+ * @property integer $rap_list
+ * @property integer $rap
+ * @property double $price_crt
+ * @property string $cert
+ * @property string $details
  */
 class Product extends \yii\db\ActiveRecord
 {
-    public $file;
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'Product';
+        return 'product';
     }
 
     /**
@@ -29,10 +39,11 @@ class Product extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_image', 'product_name'], 'required'],
-            [['product_discription'], 'string'],
-            [['product_image'],'file'],
-            [['product_image', 'product_name'], 'string', 'max' => 200]
+            [['ref', 'shape', 'weight', 'color', 'clarity', 'cut', 'pol', 'symm', 'fluo', 'rap_list', 'rap', 'price_crt', 'cert', 'details'], 'required'],
+            [['weight', 'price_crt'], 'number'],
+            [['rap_list', 'rap'], 'integer'],
+            [['ref', 'shape', 'color', 'clarity', 'cut', 'pol', 'symm', 'fluo', 'details'], 'string', 'max' => 100],
+            [['cert'], 'string', 'max' => 255]
         ];
     }
 
@@ -42,10 +53,21 @@ class Product extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'product_id' => 'Product ID',
-            'product_image' => 'Product Image',
-            'product_name' => 'Product Name',
-            'product_discription' => 'Product Discription',
+            'id' => 'ID',
+            'ref' => 'Ref',
+            'shape' => 'Shape',
+            'weight' => 'Weight',
+            'color' => 'Color',
+            'clarity' => 'Clarity',
+            'cut' => 'Cut',
+            'pol' => 'Pol',
+            'symm' => 'Symm',
+            'fluo' => 'Fluo',
+            'rap_list' => 'Rap List',
+            'rap' => 'Rap',
+            'price_crt' => 'Price Crt',
+            'cert' => 'Cert',
+            'details' => 'Details',
         ];
     }
 }

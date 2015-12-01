@@ -2,12 +2,11 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use dosamigos\fileinput\FileInput;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Product */
 
-$this->title = $model->product_id;
+$this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Products', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -16,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->product_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->product_id], [
+        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -29,12 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'product_id',
-            'product_image',
-            'product_name',
-            'product_discription:ntext',
+            'id',
+            'ref',
+            'shape',
+            'weight',
+            'color',
+            'clarity',
+            'cut',
+            'pol',
+            'symm',
+            'fluo',
+            'rap_list',
+            'rap',
+            'price_crt',
+            'cert',
+            'details',
         ],
     ]) ?>
-
 
 </div>

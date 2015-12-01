@@ -12,24 +12,33 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'ref')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'shape')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'weight')->textInput() ?>
 
-    <?= $form->field($model, 'product_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'color')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'product_discription')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'clarity')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'cut')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'product_image')->widget(\dosamigos\fileinput\BootstrapFileInput::className(), [
-        'options' => ['accept' => 'upload/*', 'multiple' => true],
-        'clientOptions' => [
-            'previewFileType' => 'text',
-            'browseClass' => 'btn btn-success',
-            'uploadClass' => 'btn btn-info',
-            'removeClass' => 'btn btn-danger',
-            'removeIcon' => '<i class="glyphicon glyphicon-trash"></i> '
-        ]
-    ]);?>
+    <?= $form->field($model, 'pol')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'symm')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'fluo')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'rap_list')->textInput() ?>
+
+    <?= $form->field($model, 'rap')->textInput() ?>
+
+    <?= $form->field($model, 'price_crt')->textInput() ?>
+
+    <?= $form->field($model, 'cert')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'details')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

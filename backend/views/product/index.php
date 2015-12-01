@@ -25,14 +25,24 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'product_id',
-            'product_image',
-            'product_name',
-            'product_discription:ntext',
+            'id',
+            'ref',
+            'shape',
+            'weight',
+            'color',
+            'clarity',
+            'cut',
+            'pol',
+            'symm',
+            'fluo',
+            'rap_list',
+            'rap',
+            'price_crt',
+            'cert',
+            'details',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-
 
 </div>

@@ -8,7 +8,6 @@ use backend\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\ForbiddenHttpException;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -34,10 +33,7 @@ class UserController extends Controller
     public function actionIndex()
 
     {
-        if ( Yii::$app->user->can('admin'))
-        {
-
-
+        if(YII::$app->user->can('admin')) {
             $searchModel = new UserSearch();
             $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -45,8 +41,6 @@ class UserController extends Controller
                 'searchModel' => $searchModel,
                 'dataProvider' => $dataProvider,
             ]);
-        }else{
-            throw new ForbiddenHttpException;
         }
     }
 
