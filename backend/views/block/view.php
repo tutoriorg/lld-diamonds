@@ -35,6 +35,10 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+    <?php if ($model->image): ?>
+        <img src="<?php echo Url::base(true).'/'.$model->image ?>" alt="" style="width: 200px; height: auto">
+
+    <?php endif; ?>
 
 
 

@@ -4,6 +4,8 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Page */
+/* @var $model backend\controllers\PageController */
+/* @var $model backend\models\Meta */
 
 $this->title = 'Update Page: ' . ' ' . $model->title;
 $this->params['breadcrumbs'][] = ['label' => 'Pages', 'url' => ['index']];
@@ -16,6 +18,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
     <?= $this->render('_form', [
         'model' => $model,
+        'meta'=>$meta,
     ]) ?>
 
 </div>

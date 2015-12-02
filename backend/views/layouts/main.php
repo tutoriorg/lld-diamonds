@@ -36,7 +36,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'User', 'url' => ['/user']],
+        ['label' => 'User', 'url' => ['/user'],'visible' => YII::$app->user->can('admin')],
         ['label' => 'Page', 'url' => ['/page']],
         ['label' => 'Meta', 'url' => ['/meta']],
         ['label' => 'Newsletter', 'url' => ['/newsletter']],
@@ -44,7 +44,7 @@ AppAsset::register($this);
         ['label' => 'Block', 'url' => ['/block']],
         ['label' => 'Slide', 'url' => ['/slide']],
         ['label' => 'Product', 'url' => ['/product']],
-        ['label' => 'Sale', 'url' => ['/sale']],
+        ['label' => 'Sale', 'url' => ['/sale'], ],
 
 
     ];
