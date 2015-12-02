@@ -8,6 +8,7 @@ use backend\models\ArticleSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ArticleController implements the CRUD actions for Article model.
@@ -62,7 +63,19 @@ class ArticleController extends Controller
     {
         $model = new Article();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) ) {
+
+            $imagename=$model->title;
+            $model->file=UploadedFile::getInstance($model,'file');
+            $model->file->saveAs('upload/'.$imagename.'.'.$model->file->extension);
+
+            $model->image='upload/'.$imagename.'.'.$model->file->extension;
+
+
+
+
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

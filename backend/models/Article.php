@@ -21,6 +21,7 @@ class Article extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $file;
     public static function tableName()
     {
         return 'article';
@@ -36,6 +37,7 @@ class Article extends \yii\db\ActiveRecord
             [['user_id'], 'integer'],
             [['short_content', 'content'], 'string'],
             [['created', 'updated'], 'safe'],
+            [['file'], 'file'],
             [['title', 'image'], 'string', 'max' => 255]
         ];
     }

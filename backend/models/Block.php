@@ -17,6 +17,7 @@ class Block extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public $file;
     public static function tableName()
     {
         return 'block';
@@ -30,6 +31,7 @@ class Block extends \yii\db\ActiveRecord
         return [
             [['title', 'content', 'image'], 'required'],
             [['content'], 'string'],
+            [['file'],'file'],
             [['title', 'image'], 'string', 'max' => 255]
         ];
     }
