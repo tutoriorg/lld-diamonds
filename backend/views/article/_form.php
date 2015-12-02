@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use dosamigos\tinymce\TinyMce;
+use yii\helpers\Url;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Article */
 /* @var $form yii\widgets\ActiveForm */
@@ -19,7 +20,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?= $form->field($model, 'short_content')->widget(TinyMce::className(), [
         'options' => ['rows' => 6],
-        'language' => 'ru',
+
         'clientOptions' => [
             'plugins' => [
                 "advlist autolink lists link charmap print preview anchor",
@@ -33,7 +34,7 @@ use dosamigos\tinymce\TinyMce;
 
     <?= $form->field($model, 'content')->widget(TinyMce::className(), [
         'options' => ['rows' => 6],
-        'language' => 'ru',
+
         'clientOptions' => [
             'plugins' => [
                 "advlist autolink lists link charmap print preview anchor",
@@ -45,6 +46,10 @@ use dosamigos\tinymce\TinyMce;
     ]);?>
 
 
+    <?php if ($model->image): ?>
+        <img src="<?php echo Url::base(true).'/'.$model->image ?>" alt="" style="width: 200px; height: auto">
+
+    <?php endif; ?>
 
     <?= $form->field($model, 'file')->widget(\dosamigos\fileinput\BootstrapFileInput::className(), [
         'options' => ['accept' => 'upload/*', 'multiple' => true],
