@@ -30,9 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'short_content:ntext',
             'content:ntext',
-            // 'image',
-            // 'created',
-            // 'updated',
+            'image',
+            'created',
+            'updated',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

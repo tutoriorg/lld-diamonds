@@ -85,6 +85,8 @@ class PageController extends Controller
 
             $meta->save();
             $model->meta_id=$meta->id;
+
+
             $model->save();
 
 

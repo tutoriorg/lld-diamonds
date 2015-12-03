@@ -2,6 +2,8 @@
 
 namespace backend\models;
 
+
+
 use Yii;
 use sadovojav\cutter\behaviors\CutterBehavior;
 
@@ -19,10 +21,21 @@ class Block extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public $file;
+
     public static function tableName()
     {
         return 'block';
+    }
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => CutterBehavior::className(),
+                'attribute' => 'image',
+                'baseDir' => '/uploads/crop',
+                'basePath' => '@webroot',
+            ],
+        ];
     }
 
 
@@ -33,11 +46,12 @@ class Block extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'content', 'image'], 'required'],
+            [['title', 'content'], 'required'],
             [['content'], 'string'],
-            [['file'],'file'],
 
-            [['title', 'image'], 'string', 'max' => 255]
+            ['image', 'file', 'extensions' => 'jpg, jpeg, png', 'mimeTypes' => 'image/jpeg, image/png'],
+
+            [['title'], 'string', 'max' => 255]
         ];
     }
 

@@ -111,4 +111,67 @@ return array (
       '@yii/imagine' => $vendorDir . '/yiisoft/yii2-imagine',
     ),
   ),
+  'mongosoft/yii2-upload-behavior' => 
+  array (
+    'name' => 'mongosoft/yii2-upload-behavior',
+    'version' => '0.1.6.0',
+    'alias' => 
+    array (
+      '@mongosoft/file' => $vendorDir . '/mongosoft/yii2-upload-behavior',
+    ),
+  ),
+  'karpoff/yii2-crop-image-upload' => 
+  array (
+    'name' => 'karpoff/yii2-crop-image-upload',
+    'version' => '0.0.1.0',
+    'alias' => 
+    array (
+      '@karpoff/icrop' => $vendorDir . '/karpoff/yii2-crop-image-upload',
+    ),
+  ),
+  'sadovojav/yii2-image-cutter' => 
+  array (
+    'name' => 'sadovojav/yii2-image-cutter',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@sadovojav/cutter' => $vendorDir . '/sadovojav/yii2-image-cutter',
+    ),
+  ),
+  'kartik-v/yii2-krajee-base' => 
+  array (
+    'name' => 'kartik-v/yii2-krajee-base',
+    'version' => '1.7.9.0',
+    'alias' => 
+    array (
+      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base',
+    ),
+  ),
+  'kartik-v/yii2-widget-select2' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-select2',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2',
+    ),
+  ),
+  'yiisoft/yii2-jui' => 
+  array (
+    'name' => 'yiisoft/yii2-jui',
+    'version' => '2.0.4.0',
+    'alias' => 
+    array (
+      '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
+    ),
+  ),
+  'mdmsoft/yii2-admin' => 
+  array (
+    'name' => 'mdmsoft/yii2-admin',
+    'version' => '1.0.5.0',
+    'alias' => 
+    array (
+      '@mdm/admin' => $vendorDir . '/mdmsoft/yii2-admin',
+    ),
+  ),
 );

@@ -31,7 +31,7 @@ class Page extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'content', 'created', 'updated', 'alias'], 'required'],
+            [['title', 'content',  'alias'], 'required'],
             [['meta_id'], 'integer'],
             [['content'], 'string'],
             [['created', 'updated'], 'safe'],
@@ -54,5 +54,17 @@ class Page extends \yii\db\ActiveRecord
             'updated' => 'Updated',
             'alias' => 'Alias',
         ];
+    }
+
+    public function beforeSave($model)
+    {
+        if ($this->isNewRecord)
+        {
+            $this->created = date('Y-m-d H:i:s');
+        }
+
+        $this->updated = date('Y-m-d H:i:s');
+
+        return parent::beforeSave($model);
     }
 }
