@@ -1,0 +1,484 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) and (max-width : 1265px) {
+    .slider > .container, .search_diamonds > .container{
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .about_us_title{
+        right: 34%;
+    }
+    .page_press_title_wr .page_press_title{
+        right: 36%;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-prev{
+        left: 0px;
+    }
+    .owl-theme .owl-controls .owl-buttons .owl-next{
+        right: 0;
+    }
+    .slider .glyphicon-chevron-right {
+        right: -38px;
+    }
+    .slider .glyphicon-chevron-left{
+        left: -38px;
+    }
+    .slider .slider_img{
+        left: 0px;
+        top: 0px;
+    }
+    .slider .slider_descr_wr{
+        right: 0px;
+        width: 45%;
+        top: 10%
+    }
+    .slider_descr, .slider_descr span{
+        font-size: 31px;
+        
+    }
+/*    */
+    
+    .content_descr_wr .content_descr_title{
+        font:700 14px / 26px PlayfairDisplay;
+             letter-spacing: 0px; 
+    }
+    .content_descr_wr .content_descr{
+        font: 700 14px / 22px PlayfairDisplay;
+    }
+    .some_about_title, .search_diamonds_title {
+        left: 26%;
+        width: 450px;
+    }
+  
+    
+}
+@media only screen and (max-width : 1151px) {
+    .slider .carousel-indicators{
+        display: block;
+    }
+    .slider .left.carousel-control, .slider .right.carousel-control{
+        display: none;
+    }
+    .carousel-indicators {
+        bottom: 0;
+    }
+}
+@media only screen and (max-width : 1102px) {
+    .slider .slider_descr_wr{
+        right: 0px;
+        width: 40%;
+        top: 10%
+    }
+    .slider_descr, .slider_descr span{
+        font-size: 30px;
+    }
+    a.slider_button{
+            margin-top: 30px;
+    }
+}
+@media (min-width : 768px) and (max-width : 992px) {
+    .instagram_widget_img{
+        width: 32%;
+    }
+    .instagram_widget_img img{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width : 992px) {
+     .about_us_title{
+        right: 30%;
+    }
+    .about_us_img {
+        padding-left: 0;
+        width: 100%;
+    }
+    .page_press_title_wr .page_press_title{
+        right: 32%;
+    }
+    .page_press_forbes {
+        position: absolute;
+        right: 38%;
+        bottom: -36px;
+        top: auto;
+    }
+    .page_press_item .press_post{
+        padding-left: 15px;
+        margin-left: 0;
+    }
+    .subscribe_left .subscribe_descr{
+            letter-spacing: 0.5px;
+    color: #ffffff;
+    font: 700 20px/17px PlayfairDisplay;
+     text-align: center; 
+    text-transform: uppercase;
+    padding: 36px 0px 36px 0;
+    }
+   .subscribe .subscribe_right {
+        padding-left: 0;
+    }
+    .header_center .logo_descr{
+        font-size: 35px;
+    }
+    .some_about_title, .search_diamonds_title{
+        left: 23%;
+        width: 400px;
+    }
+    .slider .slider_img{
+        width: 50%;
+    }
+    .slider .slider_img img{
+        width: 100%;
+    }
+    .slider .slider_descr_wr{
+        width: 50%;
+    }
+    a.slider_button {
+        margin-top: 15px;
+    }
+    .slider_descr, .slider_descr span{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .contact_bottom_center{
+        padding-left: 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .scroll_top{
+        display: block;
+    }
+    .about_us_descr p{
+        padding-bottom: 10px;
+    }
+    .about_contact_descr{
+        padding: 28px 0;
+        color: #191919;
+        font: 700 16px / 24px PlayfairDisplay;
+    }
+    .about_contact_wr .about_contact{
+        color: #191919;
+        font: 700 16px / 24px PlayfairDisplay;
+    }
+        .about_contact_wr .about_contact span{
+            color: #608eb5;
+            font: 700 16px / 24px OpenSans-Regular;
+    }
+    .about_contact_wr{
+        padding-top: 15px;
+    }
+    .buttom_video_center{
+            top: 60px;
+    }
+    .video_wr{
+        margin-bottom: 50px;
+    }
+    .video_wr, video {
+        height: 200px;
+    }
+    .about_us_descr{
+        margin-bottom: 15px;
+    }
+    .about_us {
+        border-top: 1px solid #dbdbdb;
+        padding: 38px 0 60px;
+    }
+    .about_us_title_wr{
+        border: 0;
+        padding: 0;
+    }
+    .about_us_img {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    .about_us_img img{
+        width: 100%;
+    }
+    .about_us_title{
+        color: #191919;
+        font: 700 20px PlayfairDisplay;
+        position: static;
+        width: auto;
+        text-align: center;
+        display: block;
+    }
+    .about_us_container{
+        margin-top: 20px;
+    }
+    .page_press_image_wr{
+        width: 280px;
+        margin-bottom: 50px;
+    }
+    .page_press_forbes{
+        right: 33%;
+    }
+    .page_press_title_wr{
+        border: 0;
+        margin-bottom: 0;
+    }
+    .page_press{
+        padding: 38px 0 20px;
+    }
+    .page_press .page_press_title_wr + .row{
+        margin-top: 20px !important;
+    }
+    .page_press .row{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .page_press_title_wr .page_press_title{
+        position: static;
+        width: auto;
+        color: #191919;
+        font: 700 20px PlayfairDisplay;
+        line-height: 15px;
+    }
+    .header_menu .nav_bar{
+        display: none;
+    }
+    .slider{
+        padding-top: 0;
+    }
+    .top_bar_mobile .container{
+        padding-left: 0px;
+    }
+    .header_center img{
+        margin-top: 4px;
+        padding: 0; 
+        width: 76px;
+    }
+    .header_menu{
+        border: none;
+    }
+    .header_center .logo_descr{
+        margin: 0;
+        margin-top: -8px;
+        margin-bottom: 7px;
+        font: 700 24px PlayfairDisplay;
+        text-align: center;
+    }
+    
+    .header_menu .nav_bar li {
+        display: block;
+        text-align: left;
+        padding: 0;
+    }
+    .header_menu .nav_bar li.home{
+        padding-left: 0px;
+    }
+    .header_menu .nav_bar{
+        padding-top: 15px;
+/*        padding-bottom: 50px;*/
+    }
+    .header_menu li.home a{
+        border-bottom: none;
+        padding: 0;
+    }
+    .header_menu li > a, .header_menu li.inventory a{
+        font: 700 14px / 50px PlayfairDisplay;
+    }
+    .header_menu{
+        background-color: #e7ebee;
+    }
+    .header_center{
+        height: auto;
+        border-bottom: 0;
+    }
+    .mobile_hidden{
+        display: none !important;
+    }
+    .mobile_visible{
+        display: block;
+    }
+    .subscribe_left{
+        height: 48px;
+    }
+    .subscribe_search_wr .subscribe_search{
+        position: relative;
+        top: -4px;
+    }
+    .subscribe_search_wr{
+        position: relative;
+        width: 255px;
+        margin: 0 auto;
+    }
+    .subscribe{
+        height: 214px;
+    }
+    .subscribe_left .subscribe_descr{
+        color: #ffffff;
+        font: 700 15px PlayfairDisplay;
+    }
+    .subscribe_search_wr input {
+        width: 270px;
+        margin: 0 auto;
+         position: relative;
+        top: 24px;
+    }
+    .subscribe_search_wr .subscribe_search{
+        background-color: #4b5054;
+        position: relative;
+        width: 270px;
+        height: 40px;
+        top: 44px;
+        left: 0;
+        padding: 4px;
+        letter-spacing: 2px;
+        margin: 0 auto;
+    }
+    .some_about_title_wp , .search_diamonds_title_wp{
+        border: none;
+        margin-bottom: 20px;
+        margin-top: 39px;
+        padding: 0;
+    }
+    .some_about_title, .search_diamonds_title{
+        text-align: center;
+        font: 700 20px PlayfairDisplay;
+        position: static;
+        background-color: #fafafa;
+        width: 100%; 
+    }
+    .content_descr_wr .content_descr_title{
+        font: 700 16px / 26px PlayfairDisplay;
+        text-transform: uppercase;
+        padding: 13px 0 20px;
+        letter-spacing: 1px;
+    }
+    .content_descr_wr .content_descr{
+        color: #7f7f7f;
+        letter-spacing: 0.5px;
+        font: 700 15px / 25px PlayfairDisplay;
+    }
+    .some_about .content_descr_wr{
+        margin-bottom: 40px;
+    }
+    .some_about {
+        border-top: 1px solid #ccd1da;
+        padding-bottom: 0;
+    }
+    .search_diamonds_wr{
+        margin-bottom: 20px;
+    }
+    .slider .item > img {
+        height: 260px;
+    }
+    a.slider_button{
+        width: 180px;
+        height: 40px;
+        text-align: center;
+        padding: 11px 0px;
+        margin-top: 30px;
+    }
+    .slider_descr, .slider_descr span{
+        font-size: 22px;
+        line-height: 28px;
+    }
+   
+   
+    .slider .container{
+        padding: 0;
+    }
+    .slider .slider_img{
+        top: 40px;
+        width: 50%;
+    }
+    .slider .slider_descr_wr{
+        width: 50%;
+    }
+/*    footer*/
+    .contact_bottom .contact_bottom_title{
+        margin-top: 6px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    .contact_bottom_right .instagram_widget{
+        text-align: left;
+    }
+    .contact_bottom_center{
+        padding: 0 15px;
+    }
+    .contact_bottom_center{
+        padding-top: 37px;
+    }
+    .contact_bottom{
+        padding-top: 40px;
+    }
+    .contact_bottom .container{
+        max-width: 320px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .footer .footer_descr{
+        max-width: 320px;
+        padding: 19px 25px 0 18px;
+    }
+    .footer{
+        height: 74px;
+    }
+  .slider .slider_img{
+        left: -163px;
+        top: 20px;
+        width: 327px;
+    }
+     .slider .slider_descr_wr{
+        top: 30px;
+        width: 57%;
+    }
+    .slider_descr, .slider_descr span {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    footer .mobile_hidden{
+        display: none;
+    }
+}
+@media only screen and (max-width : 380px) {
+
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+
+}
