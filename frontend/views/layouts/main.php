@@ -10,6 +10,10 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
+if (class_exists('yii\debug\Module')) {
+    $this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
+}
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
