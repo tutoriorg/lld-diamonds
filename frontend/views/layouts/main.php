@@ -20,6 +20,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+
     <?php $this->head() ?>
 </head>
 <body>
@@ -78,6 +79,14 @@ AppAsset::register($this);
     </div>
 </footer>
 
+<!--
+	[if lt IE 9]>
+<script src="/libs/html5shiv/es5-shim.min.js"></script>
+<script src="/libs/html5shiv/html5shiv.min.js"></script>
+<script src="/libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="/libs/respond/respond.min.js"></script>
+<![endif]
+    -->
 <?php $this->endBody() ?>
 </body>
 </html>
