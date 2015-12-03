@@ -10,6 +10,10 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
+if (class_exists('yii\debug\Module')) {
+    $this->off(\yii\web\View::EVENT_END_BODY, [\yii\debug\Module::getInstance(), 'renderToolbar']);
+}
+
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -90,7 +94,7 @@ AppAsset::register($this);
                 <li class="inventory"><a href="#">Inventory</a></li>
                 <li><a href="#">Press</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li class="mobile_hidden"><a class="header_search " href="#"></a></li>
+                <li class="mobile_hidden"><a href="#" class="header_search " href="#"></a></li>
                 </li>
             </ul>
         </div>
