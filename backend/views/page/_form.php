@@ -31,9 +31,9 @@ use dosamigos\tinymce\TinyMce;
         ]
     ]);?>
 
-    <?= $form->field($model, 'created')->textInput() ?>
 
-    <?= $form->field($model, 'updated')->textInput() ?>
+
+
 
     <?= $form->field($model, 'alias')->textInput(['maxlength' => true]) ?>
 

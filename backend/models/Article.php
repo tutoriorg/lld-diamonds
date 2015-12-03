@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use sadovojav\cutter\behaviors\CutterBehavior;
 
 /**
  * This is the model class for table "article".
@@ -21,24 +22,36 @@ class Article extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public $file;
+
     public static function tableName()
     {
         return 'article';
     }
-
+    public function behaviors()
+    {
+        return [
+            'image' => [
+                'class' => CutterBehavior::className(),
+                'attribute' => 'image',
+                'baseDir' => '/uploads/crop',
+                'basePath' => '@webroot',
+            ],
+        ];
+    }
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['user_id', 'title', 'short_content', 'content', 'image', 'created', 'updated'], 'required'],
+            [['user_id', 'title', 'short_content', 'content'], 'required'],
             [['user_id'], 'integer'],
             [['short_content', 'content'], 'string'],
+
+
+            ['image', 'file', 'extensions' => 'jpg, jpeg, png', 'mimeTypes' => 'image/jpeg, image/png'],
             [['created', 'updated'], 'safe'],
-            [['file'], 'file'],
-            [['title', 'image'], 'string', 'max' => 255]
+            [['title'], 'string', 'max' => 255]
         ];
     }
 
@@ -57,5 +70,17 @@ class Article extends \yii\db\ActiveRecord
             'created' => 'Created',
             'updated' => 'Updated',
         ];
+    }
+
+    public function beforeSave($model)
+    {
+        if ($this->isNewRecord)
+        {
+            $this->created = date('Y-m-d H:i:s');
+        }
+
+        $this->updated = date('Y-m-d H:i:s');
+
+        return parent::beforeSave($model);
     }
 }

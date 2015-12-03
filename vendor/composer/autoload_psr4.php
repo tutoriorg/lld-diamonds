@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\jui\\' => array($vendorDir . '/yiisoft/yii2-jui'),
     'yii\\imagine\\' => array($vendorDir . '/yiisoft/yii2-imagine'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
@@ -15,7 +16,13 @@ return array(
     'yii\\codeception\\' => array($vendorDir . '/yiisoft/yii2-codeception'),
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
+    'sadovojav\\cutter\\' => array($vendorDir . '/sadovojav/yii2-image-cutter'),
+    'mongosoft\\file\\' => array($vendorDir . '/mongosoft/yii2-upload-behavior'),
+    'mdm\\admin\\' => array($vendorDir . '/mdmsoft/yii2-admin'),
+    'kartik\\select2\\' => array($vendorDir . '/kartik-v/yii2-widget-select2'),
     'kartik\\plugins\\fileinput\\' => array($vendorDir . '/kartik-v/bootstrap-fileinput'),
+    'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
+    'karpoff\\icrop\\' => array($vendorDir . '/karpoff/yii2-crop-image-upload'),
     'dosamigos\\tinymce\\' => array($vendorDir . '/2amigos/yii2-tinymce-widget/src'),
     'dosamigos\\gallery\\' => array($vendorDir . '/2amigos/yii2-gallery-widget/src'),
     'dosamigos\\fileupload\\' => array($vendorDir . '/2amigos/yii2-file-upload-widget/src'),

@@ -46,25 +46,18 @@ use yii\helpers\Url;
     ]);?>
 
 
-    <?php if ($model->image): ?>
-        <img src="<?php echo Url::base(true).'/'.$model->image ?>" alt="" style="width: 200px; height: auto">
 
-    <?php endif; ?>
+    <div class="form-group" style="max-width:300px">
+        <label class="control-label">Image</label>
+        <?= \sadovojav\cutter\Cutter::widget([
+            'model' => $model,
+            'attribute' => 'image'
+        ]); ?>
+    </div>
 
-    <?= $form->field($model, 'file')->widget(\dosamigos\fileinput\BootstrapFileInput::className(), [
-        'options' => ['accept' => 'upload/*', 'multiple' => true],
-        'clientOptions' => [
-            'previewFileType' => 'image',
-            'browseClass' => 'btn btn-success',
-            'uploadClass' => 'btn btn-info',
-            'removeClass' => 'btn btn-danger',
-            'removeIcon' => '<i class="glyphicon glyphicon-trash"></i> '
-        ]
-    ]);?>
 
-    <?= $form->field($model, 'created')->textInput() ?>
 
-    <?= $form->field($model, 'updated')->textInput() ?>
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -9,7 +9,7 @@ use backend\models\BlockSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\UploadedFile;
+
 use yii\filters\AccessControl;
 /**
  * BlockController implements the CRUD actions for Block model.
@@ -40,6 +40,8 @@ class BlockController extends Controller
                     'delete' => ['post'],
                 ],
             ],
+
+
         ];
     }
 
@@ -79,22 +81,7 @@ class BlockController extends Controller
     {
         $model = new Block();
 
-        if ($model->load(Yii::$app->request->post())) {
-
-            $imagename=$model->title;
-            $model->file=UploadedFile::getInstance($model,'file');
-
-            $model->file->saveAs('upload/'.$imagename.'.'.$model->file->extension);
-
-
-            $model->image='upload/'.$imagename.'.'.$model->file->extension;
-
-
-
-
-
-            $model->save();
-
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
