@@ -40,6 +40,8 @@ class BlockController extends Controller
                     'delete' => ['post'],
                 ],
             ],
+
+
         ];
     }
 

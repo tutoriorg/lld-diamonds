@@ -2,8 +2,6 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\helpers\Url;
-use backend\models\Block;
 
 
 
@@ -24,8 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Block', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-<?php $model = new Block()?>
-    <?php $model->load(Yii::$app->request->post())?>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -42,9 +39,5 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 
-    <?php if ($model->image): ?>
-        <img src="<?php echo Url::base(true).'/'.$model->image ?>" alt="" style="width: 200px; height: auto">
-
-    <?php endif; ?>
 
 </div>

@@ -3,6 +3,8 @@
 namespace backend\models;
 
 use Yii;
+use sadovojav\cutter\behaviors\CutterBehavior;
+
 
 /**
  * This is the model class for table "block".
@@ -23,6 +25,8 @@ class Block extends \yii\db\ActiveRecord
         return 'block';
     }
 
+
+
     /**
      * @inheritdoc
      */
@@ -32,6 +36,7 @@ class Block extends \yii\db\ActiveRecord
             [['title', 'content', 'image'], 'required'],
             [['content'], 'string'],
             [['file'],'file'],
+
             [['title', 'image'], 'string', 'max' => 255]
         ];
     }

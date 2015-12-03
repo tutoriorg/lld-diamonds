@@ -22,6 +22,8 @@
         "2amigos/yii2-ckeditor-widget": "~1.0",
         "2amigos/yii2-tinymce-widget": "~1.1",
         "2amigos/yii2-file-upload-widget": "~1.0"
+	"karpoff/yii2-crop-image-upload": "*"
+	
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
