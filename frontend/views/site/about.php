@@ -3,6 +3,11 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use backend\models\Article;
+
+$articles = Article::find()->all();
+
+print_r($articles);
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
