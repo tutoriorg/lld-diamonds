@@ -94,7 +94,7 @@ AppAsset::register($this);
                 <li class="inventory"><a href="#">Inventory</a></li>
                 <li><a href="#">Press</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li class="mobile_hidden"><a class="header_search " href="#"></a></li>
+                <li class="mobile_hidden"><a href="#" class="header_search " href="#"></a></li>
                 </li>
             </ul>
         </div>
