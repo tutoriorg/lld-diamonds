@@ -1,0 +1,706 @@
+2015-12-01 16:14:31 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:14:31 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=bpr545egkipssvka7osi0a8653; _csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55081'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986471.298
+    'REQUEST_TIME' => 1448986471
+]
+2015-12-01 16:14:46 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:14:46 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55095'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986486.421
+    'REQUEST_TIME' => 1448986486
+]
+2015-12-01 16:16:47 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:16:47 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55103'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986607.261
+    'REQUEST_TIME' => 1448986607
+]
+2015-12-01 16:17:01 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:17:01 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55113'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986621.06
+    'REQUEST_TIME' => 1448986621
+]
+2015-12-01 16:17:03 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/site/index".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/site/inde...', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:17:03 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55113'
+    'REDIRECT_URL' => '/backend/web//site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986623.264
+    'REQUEST_TIME' => 1448986623
+]
+2015-12-01 16:17:20 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "backend/".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('backend/', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:17:20 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/frontend/web/index.php'
+    'REMOTE_PORT' => '55122'
+    'REDIRECT_URL' => '/frontend/web/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986640.835
+    'REQUEST_TIME' => 1448986640
+]
+2015-12-01 16:18:59 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "backend/".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('backend/', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:18:59 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/frontend/web/index.php'
+    'REMOTE_PORT' => '55151'
+    'REDIRECT_URL' => '/frontend/web/backend/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986739.109
+    'REQUEST_TIME' => 1448986739
+]
+2015-12-01 16:21:23 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:21:23 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55165'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986883.663
+    'REQUEST_TIME' => 1448986883
+]
+2015-12-01 16:22:28 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:22:28 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55176'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986948.65
+    'REQUEST_TIME' => 1448986948
+]
+2015-12-01 16:22:29 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:22:29 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55179'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986949.507
+    'REQUEST_TIME' => 1448986949
+]
+2015-12-01 16:22:30 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 16:22:30 [127.0.0.1][-][bpr545egkipssvka7osi0a8653][info][application] $_COOKIE = [
+    '_csrf' => '947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW\";}'
+    'PHPSESSID' => 'bpr545egkipssvka7osi0a8653'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'lld-diamonds.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=947c4d0418e632dce223d475971b569c7e7fb6cb8b8e7eb336d4dce7a4fb6ee7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_Q1rlk7BC1oks-uI9uFaQMSyS0SSI-TW%22%3B%7D; PHPSESSID=bpr545egkipssvka7osi0a8653'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-diamonds.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-diamonds.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '55181'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1448986950.117
+    'REQUEST_TIME' => 1448986950
+]
+2015-12-01 17:23:41 [127.0.0.1][-][pnhhbkclhjjgj4niu18ur52ir3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "backend/views/user".' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('backend/views/u...', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-01 17:23:41 [127.0.0.1][-][pnhhbkclhjjgj4niu18ur52ir3][info][application] $_GET = [
+    'r' => 'backend/views/user'
+]
+
+$_COOKIE = [
+    '_csrf' => 'e7389247f89e6d6c834141cbc6afc1a0c5482bf09ac22fbc7869c9a30bda1d48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7A91hwEPZsCSjSJFign9KeJDIu7T2KxQ\";}'
+    'PHPSESSID' => 'pnhhbkclhjjgj4niu18ur52ir3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lelufa'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e7389247f89e6d6c834141cbc6afc1a0c5482bf09ac22fbc7869c9a30bda1d48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227A91hwEPZsCSjSJFign9KeJDIu7T2KxQ%22%3B%7D; PHPSESSID=pnhhbkclhjjgj4niu18ur52ir3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '58427'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=backend%2Fviews%2Fuser'
+    'REQUEST_URI' => '/index.php?r=backend%2Fviews%2Fuser'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1448990621.69
+    'REQUEST_TIME' => 1448990621
+]
