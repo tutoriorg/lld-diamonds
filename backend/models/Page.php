@@ -31,7 +31,7 @@ class Page extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['meta_id', 'title', 'content', 'created', 'updated', 'alias'], 'required'],
+            [['title', 'content', 'created', 'updated', 'alias'], 'required'],
             [['meta_id'], 'integer'],
             [['content'], 'string'],
             [['created', 'updated'], 'safe'],

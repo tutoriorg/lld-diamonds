@@ -4,10 +4,13 @@ namespace backend\controllers;
 
 use Yii;
 use backend\models\Page;
+use backend\models\Meta;
 use backend\models\PageSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+
 
 /**
  * PageController implements the CRUD actions for Page model.
@@ -17,6 +20,21 @@ class PageController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['index', 'create', 'update', 'view', 'delete'],
+                        'allow' => false,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['index', 'create', 'update', 'view', 'delete'],
+                        'allow' => true,
+                        'roles' => ['admin'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -61,12 +79,22 @@ class PageController extends Controller
     public function actionCreate()
     {
         $model = new Page();
+        $meta = new Meta();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $meta->load(Yii::$app->request->post())) {
+
+            $meta->save();
+            $model->meta_id=$meta->id;
+            $model->save();
+
+
+
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'meta' => $meta,
             ]);
         }
     }
@@ -80,12 +108,24 @@ class PageController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $meta = Meta::findOne($model->meta_id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $meta->load(Yii::$app->request->post())) {
+
+
+            $meta->save();
+
+            $model->save();
+
+
+
+
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'meta'=>$meta,
             ]);
         }
     }
@@ -98,7 +138,13 @@ class PageController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $model = $this->findModel($id);
+        if ($meta = Meta::findOne($model->meta_id)) {
+            $meta->delete();
+        }
+
+        $model->delete();
+
 
         return $this->redirect(['index']);
     }
