@@ -5814,3 +5814,699 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1449154105.028
     'REQUEST_TIME' => 1449154105
 ]
+2015-12-04 14:52:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in /var/www/html/lld-diamonds/backend/modules/settings/views/default/index.php:23
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render()
+#3 /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php(40): yii\base\Controller->render()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\modules\settings\controllers\DefaultController->actionIndex()
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#8 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#9 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-12-04 14:52:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46314'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Findex'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449240762.042
+    'REQUEST_TIME' => 1449240762
+]
+2015-12-04 14:55:31 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in /var/www/html/lld-diamonds/backend/modules/settings/views/default/index.php:23
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render()
+#3 /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php(45): yii\base\Controller->render()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\modules\settings\controllers\DefaultController->actionIndex()
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#8 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#9 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2015-12-04 14:55:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46326'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Findex'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449240931.101
+    'REQUEST_TIME' => 1449240931
+]
+2015-12-04 14:55:53 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/widgets/BaseListView.php:109
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/grid/GridView.php(262): yii\widgets\BaseListView->init()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#7 /var/www/html/lld-diamonds/backend/modules/settings/views/default/index.php(37): yii\base\Widget::widget(Array)
+#8 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/l...')
+#9 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/l...', Array)
+#10 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/l...', Array, Object(backend\modules\settings\controllers\DefaultController))
+#11 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(backend\modules\settings\controllers\DefaultController))
+#12 /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php(45): yii\base\Controller->render('index', Array)
+#13 [internal function]: backend\modules\settings\controllers\DefaultController->actionIndex()
+#14 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('settings/defaul...', Array)
+#18 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2015-12-04 14:55:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46333'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Findex'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449240953.061
+    'REQUEST_TIME' => 1449240953
+]
+2015-12-04 14:56:23 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: searchModel' in /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php:36
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2015-12-04 14:56:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46340'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Findex'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449240983.553
+    'REQUEST_TIME' => 1449240983
+]
+2015-12-04 15:04:40 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/widgets/BaseListView.php:109
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/grid/GridView.php(262): yii\widgets\BaseListView->init()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\grid\GridVi...', Array, Array)
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\grid\GridVi...', Array, Array)
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#7 /var/www/html/lld-diamonds/backend/modules/settings/views/default/index.php(37): yii\base\Widget::widget(Array)
+#8 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(325): require('/var/www/html/l...')
+#9 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/var/www/html/l...', Array)
+#10 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/var/www/html/l...', Array, Object(backend\modules\settings\controllers\DefaultController))
+#11 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(backend\modules\settings\controllers\DefaultController))
+#12 /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php(45): yii\base\Controller->render('index', Array)
+#13 [internal function]: backend\modules\settings\controllers\DefaultController->actionIndex()
+#14 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#17 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('settings/defaul...', Array)
+#18 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2015-12-04 15:04:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46386'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Findex'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449241480.355
+    'REQUEST_TIME' => 1449241480
+]
+2015-12-04 15:23:43 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: settings/default/view' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('settings/defaul...', Array)
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-04 15:23:43 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][info][application] $_GET = [
+    'r' => 'settings/default/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449242623.661
+    'REQUEST_TIME' => 1449242623
+]
+2015-12-04 15:23:51 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: settings/default/view' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('settings/defaul...', Array)
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-04 15:23:51 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][info][application] $_GET = [
+    'r' => 'settings/default/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46607'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449242631.781
+    'REQUEST_TIME' => 1449242631
+]
+2015-12-04 15:25:36 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')', expecting ']'' in /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php:42
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(563): ::spl_autoload_call()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(563): ::class_exists()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID()
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(513): yii\base\Module->createController()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController()
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#7 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-04 15:25:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46635'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449242736.092
+    'REQUEST_TIME' => 1449242736
+]
+2015-12-04 15:32:13 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')', expecting ']'' in /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php:93
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(563): ::spl_autoload_call()
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(563): ::class_exists()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID()
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(513): yii\base\Module->createController()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController()
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#7 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-12-04 15:32:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449243133.002
+    'REQUEST_TIME' => 1449243133
+]
+2015-12-04 15:32:33 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Response.php:279
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Controller.php(146): yii\web\Response->redirect()
+#1 /var/www/html/lld-diamonds/backend/modules/settings/controllers/DefaultController.php(93): yii\web\Controller->redirect()
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): backend\modules\settings\controllers\DefaultController->actionUpdate()
+#3 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#4 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams()
+#5 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction()
+#6 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction()
+#7 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#8 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2015-12-04 15:32:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'settings/default/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'aEpBbkkuaHkgZwZWB1lfQEUfOVwLHwM3IRkrBDgZKQsAeHIjJlkHLA=='
+    'Settings' => [
+        'site_name' => 'Lld Diamonds'
+        'site_email' => 'lld-diamonds@email.com'
+        'site_phone' => '55555-555555-55555'
+        'inport_file_url' => 'imrort/file/url'
+        'import_images_url' => 'import/images/url'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '301'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://lld-admin.dev'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449243153.146
+    'REQUEST_TIME' => 1449243153
+]
+2015-12-04 15:34:00 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: settings/default/udate' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('udate', Array)
+#1 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('settings/defaul...', Array)
+#2 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /var/www/html/lld-diamonds/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /var/www/html/lld-diamonds/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/lld-diamonds/backend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-12-04 15:34:00 [127.0.0.1][1][0nf7m7sduoc23ccramkr6ul690][info][application] $_GET = [
+    'r' => 'settings/default/udate'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU\";}'
+    'PHPSESSID' => '0nf7m7sduoc23ccramkr6ul690'
+    '_identity' => '44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'lld-admin.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36'
+    'HTTP_REFERER' => 'http://lld-admin.dev/index.php?r=settings%2Fdefault%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=98bc0cad83bedb80c29d8516ea0783ededf6a1eb8136271f29d729eb43d37464a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H-G8Nw79-Ux2B1kNISjjq7Arh23MowoU%22%3B%7D; PHPSESSID=0nf7m7sduoc23ccramkr6ul690; _identity=44bb5b8a9c86eed0666cb2c6670ac0dd8d4358b16adcbfda934fb2d4d33562fba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22g4ZDyyWwNUXavUjZUV6-0Z7KFF0meK9g%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at lld-admin.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'lld-admin.dev'
+    'SERVER_ADDR' => '127.0.53.53'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html/lld-diamonds/backend/web'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/lld-diamonds/backend/web/index.php'
+    'REMOTE_PORT' => '46713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Fdefault%2Fudate&id=1'
+    'REQUEST_URI' => '/index.php?r=settings%2Fdefault%2Fudate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449243240.279
+    'REQUEST_TIME' => 1449243240
+]
