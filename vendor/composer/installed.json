@@ -1585,51 +1585,6 @@
         ]
     },
     {
-        "name": "sadovojav/yii2-image-cutter",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sadovojav/yii2-image-cutter.git",
-            "reference": "dad69e0edea2eb9421566739ec6334b8577570cf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sadovojav/yii2-image-cutter/zipball/dad69e0edea2eb9421566739ec6334b8577570cf",
-            "reference": "dad69e0edea2eb9421566739ec6334b8577570cf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0",
-            "yiisoft/yii2": "*",
-            "yiisoft/yii2-imagine": "*"
-        },
-        "time": "2015-07-30 17:17:56",
-        "type": "yii2-extension",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "sadovojav\\cutter\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Aleksandr Sadovoj",
-                "email": "sadovojav@gmail.com",
-                "homepage": "https://github.com/sadovojav"
-            }
-        ],
-        "description": "Yii2 crop image widget",
-        "keywords": [
-            "crop",
-            "cutter",
-            "image",
-            "upload",
-            "yii2"
-        ]
-    },
-    {
         "name": "bower-asset/bootstrap",
         "version": "v3.3.5",
         "version_normalized": "3.3.5.0",
@@ -2191,6 +2146,51 @@
             "selection",
             "upload",
             "widget"
+        ]
+    },
+    {
+        "name": "sadovojav/yii2-image-cutter",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sadovojav/yii2-image-cutter.git",
+            "reference": "dad69e0edea2eb9421566739ec6334b8577570cf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sadovojav/yii2-image-cutter/zipball/dad69e0edea2eb9421566739ec6334b8577570cf",
+            "reference": "dad69e0edea2eb9421566739ec6334b8577570cf",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-imagine": "*"
+        },
+        "time": "2015-07-30 17:17:56",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "sadovojav\\cutter\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Aleksandr Sadovoj",
+                "email": "sadovojav@gmail.com",
+                "homepage": "https://github.com/sadovojav"
+            }
+        ],
+        "description": "Yii2 crop image widget",
+        "keywords": [
+            "crop",
+            "cutter",
+            "image",
+            "upload",
+            "yii2"
         ]
     }
 ]
